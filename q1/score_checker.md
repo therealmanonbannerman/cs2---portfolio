@@ -54,13 +54,13 @@ Explain how the program decides which classification should be displayed.
 
 > The program checks the score through several conditions. It first checks if the score is outside the valid range, then checks each classification from the highest score range to the lowest until it finds the correct result.
 
-# Part 2
+# Part 2 - Flowchart
 
 ## Flowchart
 
 ![Score Checker Flowchart](./score_checker_flowchart_20260906_204525_0000.png)
 
-# Part 3
+# Part 3 - Pseudocode
 
 ## Sample Pseudocode
 
@@ -85,12 +85,12 @@ ELSE
 
 END
 
-# Part 4
+# Part 4 - Clean Code Implementation
 
 ## Source Code
 ![Score Checker Source Code](./score_checker.py)
 
-# Part 5
+# Part 5 - Testing
 
 ## Testing
 
