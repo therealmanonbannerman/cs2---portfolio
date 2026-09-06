@@ -92,8 +92,6 @@ END
 
 # Part 5 - Testing
 
-## Testing Reflection
-
 | Test | Input | Purpose | Expected Output | Actual Output | Result |
 |---|---:|---|---|---|---|
 | 1 | -1 | Below minimum | Invalid Score. | Invalid Score. | PASS |
@@ -104,3 +102,27 @@ END
 | 6 | 90 | Outstanding boundary | Outstanding | Outstanding | PASS |
 | 7 | 100 | Maximum boundary | Outstanding | Outstanding | PASS |
 | 8 | 101 | Above maximum | Invalid Score. | Invalid Score. | PASS |
+
+## Testing Reflection
+### 1. Why is it important to test the values 0 and 100? 
+>  I think it is important to test 0 and 100 because these are the lowest/highest possible scores and by testing them, we can verify that my program is working properly.
+
+### 2. Why did you also test -1 and 101? 
+> I also tested -1 and 101 because they are the numbers before/after the valid scores.
+
+### 3. Which test helped you understand body boundary conditions the most? 
+> Testing the numbers 0,100, -1, and 101 was the most helpful test to me because it showed me how to test the possible scores and the numbers right next to it, which proved that my program worked.
+
+### 4. Did any of your tests initially fail? If yes, what did you change in your program? 
+> No error.
+
+# Reflection
+### 1. How did selection structures make the program more useful? 
+> The use of selection structures made the programs more efficient since they could make decisions based on the score entered. For instance, the program was able to make decisions based on the values entered and even identify if the score was valid or not.
+
+### 2. How did proper comments and readable formatting improve your program? 
+> Proper formatting and comments made the program better since it could be read and analyzed easily. It also helped in describing what the program was doing as well as identifying errors.
+
+### 3. Why is it useful to plan the program using a flowchart and pseudocode before writing the code? 
+> Creating a flowchart and the program outline in pseudocode is essential since it helps in developing a program structure. It also makes the creation process easier and reduces errors.
+
