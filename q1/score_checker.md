@@ -69,7 +69,7 @@ END
 # Part 4
 
 ## Source Code
-![Score Checker Source Code](./q1/score_checker.py)
+![Score Checker Source Code](./score_checker.py)
 
 # Part 5
 
