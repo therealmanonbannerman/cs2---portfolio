@@ -39,7 +39,7 @@ Explain how the program decides which classification should be displayed.
 
 ## Flowchart
 
-![Score Checker Flowchart](./score_checker_flowchart.png)
+![Score Checker Flowchart](./score_checker_flowchart_20260906_204525_0000.png)
 
 # Part 3
 
