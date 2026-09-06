@@ -28,7 +28,7 @@ What information does the program need?
 
 **Minimum valid score:**
 
-> 0
+  > 0
 
 **Maximum valid score:**
 
