@@ -32,7 +32,7 @@ What information does the program need?
 
 **Maximum valid score:**
 
-> 100
+< 100
 
 ## Possible Outputs
 
