@@ -35,3 +35,36 @@ Explain how the program decides which classification should be displayed.
 
 > The program checks the score through several conditions. It first checks if the score is outside the valid range, then checks each classification from the highest score range to the lowest until it finds the correct result.
 
+# Part 2
+
+## Flowchart
+
+Insert your flowchart below
+
+![Score Checker Flowchart](./score_checker_flowchart.png)
+
+# Part 3
+
+## Pseudocode
+
+START
+
+INPUT score
+
+IF score < 0 OR score > 100 THEN
+    DISPLAY "Invalid Score."
+
+ELSE IF score >= 90 THEN
+    DISPLAY "Outstanding"
+
+ELSE IF score >= 80 THEN
+    DISPLAY "Very Satisfactory"
+
+ELSE IF score >= 75 THEN
+    DISPLAY "Satisfactory"
+
+ELSE
+    DISPLAY "Needs Improvement"
+
+END
+
