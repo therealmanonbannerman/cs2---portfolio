@@ -20,6 +20,7 @@ The program validates:
 
 # Part A - Validation Requirements
 Complete the table below before writing your program.
+
 | Data Captured | Expected Input | Validation Type | Invalid Input Example | Validation Rule | Error
 Message |
 |---|---|---|---|---|---|
