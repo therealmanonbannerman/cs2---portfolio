@@ -32,15 +32,15 @@ Complete the table below before writing your program.
 
 ## Validation Questions
 ### 1. Why should the student name not be blank?
-> Write your answer here.
+> The student name should not be blank because the program needs to specify the student.
 ### 2. Why should age be checked for both data type and range?
-> Write your answer here.
+> Age should be tested for a data type and range; that is, it should be an integer and within a certain range, like 11-18.
 ### 3. Why should grade level only accept specific values?
-> Write your answer here.
+> The grade level should have a set of permissible values only; this can be done so that it only accepts 7-12 as inputs.
 ### 4. What format requirements did you use for the email address?
-> Write your answer here.
+> The email address should contain an @ symbol and a period (.) to be valid.
 ### 5. What length requirement did you use for the registration code?
-> Write your answer here.
+> The code should be 6 characters long.
 
 # Part B - Program Design
 
@@ -103,5 +103,59 @@ END
 > Python
 
 ## Source Code File
-> [`workshop_validator.py`](workshop_validator.py)
+[`workshop_validator.py`](workshop_validator.py)
+
+## Final Code
+```python
+students_name = str(input("Enter your name: ")) 
+
+if not students_name:
+    print("ERROR: 404 - name not found. Please restart.")
+    quit()
+
+
+try:
+    students_age = int(input("Enter your age: "))
+
+    if students_age < 11 or students_age > 18:
+        print("ERROR: 404 - age not found in the system. Please reenter.")
+        quit()
+
+except ValueError:
+    print("ERROR: 404 - age not found in the system. Please reenter.")
+    quit()
+
+
+try:
+    students_grade_level = int(input("Enter your grade level: "))
+
+    if students_grade_level < 7 or students_grade_level > 12:
+        print("ERROR: 404 - grade level not found. Please reenter.")
+        quit()
+
+except ValueError:
+    print("ERROR: 404 - grade level not found. Please reenter.")
+    quit()
+
+
+students_email = input("Enter your corporate email: ")
+
+if "@" not in students_email or "." not in students_email:
+    print("ERROR: 404 - email is not valid. Please reenter.")
+    quit()
+
+
+students_regiscode = input("Enter your code: ")
+
+if len(students_regiscode) != 6:
+    print("ERROR: 404 - code does not meet standards. Please restart.")
+    quit()
+
+print("Registration confirmed.")
+
+---
+
+
+
+
 
