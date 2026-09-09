@@ -152,10 +152,38 @@ if len(students_regiscode) != 6:
     quit()
 
 print("Registration confirmed.")
-
+```
 ---
 
+### Presence Validation
+Explain where you used presence validation.
+> I used presence validation for the name part. 
+### Data Type Validation
+Explain where you used data type validation.
+> I used data type validation for the age and grade levels to make sure they are integer. 
+### Range Validation
+Explain where you used range validation. 
+> I used range validation for the age and grade levels.
+### Acceptable Value Validation
+Explain where you used acceptable value validation.
+> I used acceptable value validation for the grade levels. 
+### Pattern Validation
+Explain the simple pattern validation you used. 
+> It must be for the email which has to contain "@" and "."
+### Length Validation
+Explain the length rule you used.
+> It was for the registration code for the length to be exactly 6 characters.
 
-
-
-
+# Part D - Testing
+| Test | Input / Condition | Validation Being Tested | Expected Output | Actual Output | Result |
+|---:|---|---|---|---|---|
+| 1 | All inputs valid | Normal case | Registration successful! | Registration successful! | PASS |
+| 2 | Blank student name | Presence | ERROR: 404 - name not found. Please restart. | ERROR: 404 - name not found. Please restart. | PASS |
+| 3 | Age = `fourteen` | Data type | ERROR: 404 - age not found in the system. Please reenter. | ERROR: 404 - age not found in the system. Please reenter. | PASS |
+| 4 | Age = `11` | Minimum boundary | Continue to grade level | Continue to grade level | PASS |
+| 5 | Age = `18` | Maximum boundary | Continue to grade level | Continue to grade level | PASS |
+| 6 | Age = `10` | Range | ERROR: 404 - age not found in the system. Please reenter. | ERROR: 404 - age not found in the system. Please reenter. | PASS |
+| 7 | Grade Level = `13` | Acceptable value | ERROR: 404 - grade level not found. Please reenter. | ERROR: 404 - grade level not found. Please reenter. | PASS |
+| 8 | Email = `studentpshs.edu.ph` | Pattern | ERROR: 404 - email is not valid. Please reenter. | ERROR: 404 - email is not valid. Please reenter. | PASS |
+| 9 | Registration Code = `ABC` | Length | ERROR: 404 - code does not meet standards. Please restart. | ERROR: 404 - code does not meet standards. Please restart. | PASS |
+| 10 | Registration Code = `CS2026` | Valid length | Registration confirmed. | Registration confirmed. | PASS |
