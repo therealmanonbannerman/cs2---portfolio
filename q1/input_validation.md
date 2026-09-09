@@ -180,8 +180,8 @@ Explain the length rule you used.
 | 1 | All inputs valid | Normal case | Registration successful! | Registration successful! | PASS |
 | 2 | Blank student name | Presence | ERROR: 404 - name not found. Please restart. | ERROR: 404 - name not found. Please restart. | PASS |
 | 3 | Age = `fourteen` | Data type | ERROR: 404 - age not found in the system. Please reenter. | ERROR: 404 - age not found in the system. Please reenter. | PASS |
-| 4 | Age = `11` | Minimum boundary | Continue to grade level | Continue to grade level | PASS |
-| 5 | Age = `18` | Maximum boundary | Continue to grade level | Continue to grade level | PASS |
+| 4 | Age = `11` | Minimum boundary | *Continued with the code| *Continue with the code | PASS |
+| 5 | Age = `18` | Maximum boundary | *Continue with the code | *Continue with the code | PASS |
 | 6 | Age = `10` | Range | ERROR: 404 - age not found in the system. Please reenter. | ERROR: 404 - age not found in the system. Please reenter. | PASS |
 | 7 | Grade Level = `13` | Acceptable value | ERROR: 404 - grade level not found. Please reenter. | ERROR: 404 - grade level not found. Please reenter. | PASS |
 | 8 | Email = `studentpshs.edu.ph` | Pattern | ERROR: 404 - email is not valid. Please reenter. | ERROR: 404 - email is not valid. Please reenter. | PASS |
