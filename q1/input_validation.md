@@ -187,3 +187,86 @@ Explain the length rule you used.
 | 8 | Email = `studentpshs.edu.ph` | Pattern | ERROR: 404 - email is not valid. Please reenter. | ERROR: 404 - email is not valid. Please reenter. | PASS |
 | 9 | Registration Code = `ABC` | Length | ERROR: 404 - code does not meet standards. Please restart. | ERROR: 404 - code does not meet standards. Please restart. | PASS |
 | 10 | Registration Code = `CS2026` | Valid length | Registration confirmed. | Registration confirmed. | PASS |
+
+
+# Part E
+
+## Verification Test 1
+**Input:**
+```text
+11
+
+```
+**Expected Output:**
+```text
+*Continuation with the code
+```
+**Actual Output:**
+```text
+*Continuation with the code
+```
+**Result:** PASS 
+**Explanation:**
+> The output was correct because the code knew that 11 was the minimum boundary.
+
+---
+
+## Verification Test 2
+**Input:**
+```text
+18
+```
+**Expected Output:**
+```text
+*Continuation with the code
+```
+**Actual Output:**
+```text
+*Continuation with the code
+```
+**Result:** PASS 
+**Explanation:**
+> The output was correct because the code knew it was the maximum boundary.
+
+---
+
+## Verification Test 3
+**Input:**
+```text
+ABC
+```
+**Expected Output:**
+```text
+ERROR: 404 - code does not meet standards. Please restart. 
+```
+**Actual Output:**
+
+```text
+ERROR: 404 - code does not meet standards. Please restart. 
+```
+**Result:** PASS 
+**Explanation:**
+> The code was correct because ABC is only 3 characters while the code is expected to read 6 characters.
+
+# Reflection
+Answer briefly.
+### 1. Why should a program validate input before processing it?
+> It should validate an input to make sure the data is correct. 
+### 2. What is the difference between input validation and output verification?
+> Input is when the code checked if the initial data is correct while output checked if it produces the correct result. 
+### 3. Which validation technique was easiest for you to implement? Why?
+> Presence validation since it only checked if the data was there. 
+### 4. Which validation technique was most challenging? Why?
+> For me, pattern was the hardest one because it took me a long time to get the code correct. 
+### 5. How did testing invalid inputs help you improve your program?
+> It helped me find errors and it improved my code.
+
+---
+
+# Files for This Activity
+- [`workshop_validator.py`](workshop_validator.py)
+- `input_validation.md`
+
+---
+
+[← Back to Main Portfolio](../README.md)
