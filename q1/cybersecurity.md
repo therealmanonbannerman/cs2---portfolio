@@ -174,4 +174,54 @@ else:
 ### Data Minimization
 > The program only collects information needed for club registration. It does not ask for passwords, OTPs, home addresses, or banking information because these are unnecessary for the activity.
 
+---
 
+# Part E - Testing and Validation
+
+The program was tested using different valid and invalid inputs to check if the validation rules work correctly.
+
+| Test # | Test Description | Input Example | Expected Output | Actual Output | Result |
+|---|---|---|---|---|---|
+| 1 | All fields valid | Migraine, Dahlia, Arab Adab, migraine@gmail.com, Present | Registration Complete | Registration Complete | PASS |
+| 2 | Blank student name | Blank name | Error 404: Student name is Blank | Error 404: Student name is Blank | PASS |
+| 3 | Invalid section | Torete | Error 404: Enter a valid email | Error 404: Enter a valid email | PASS |
+| 4 | Invalid club | Yearners Club | Error 404: Enter a valid club | Error 404: Enter a valid club | PASS |
+| 5 | Email missing @ | migrainegmail.com | Error 404: Enter your corporate email | Error 404: Enter you corporate email | PASS |
+| 6 | Email missing . | migraine@gmailcom | Error 404: Enter your corporate email | Error 404: Enter your corporate email | PASS |
+| 7 | Invalid attendance | Excused | Error 404: Enter attendance status | Error 404: Enter attendance status | PASS |
+| 8 | Valid alternative values | Sundo, Ilang-Ilang, Chorale, Sundo@pshs.edu.ph, Present | Registration Complete | Registration Complete | PASS |
+
+---
+
+## Reflection
+
+### 1. What cybersecurity threat could affect this application or its users?
+
+A possible threat would be unauthorized access to the information that is collected by the registration system. If the information is not managed properly, then student data could be compromised or take advantage of.
+
+### 2. How can students reduce the risk of phishing or suspicious messages?
+
+Students should be cautious when clicking on any unknown links and should confirm any message is actually from their school before giving any personal information.
+
+### 3. How does input validation improve security?
+
+Input validation is a safety measure that ensures only the correct data according to set criteria is processed by a program. It also helps prevent the entry of unexpected data into a program.
+
+### 4. Why should programs avoid collecting unnecessary personal information?
+
+Programs should restrict unnecessary information because gathering it would lead to more information being shared or exploited.
+
+### 5. How did the input validation concepts from SG7 become security practices in SG8?
+
+The input validation concepts from SG7 taught me how to validate information before accepting it. In SG8, these concepts can be implemented as security practices that can be used to secure data and protect against invalid or unwanted input.
+
+---
+
+## Files for This Activity
+
+- [`secure_registration.py`](secure_registration.py)
+- [`cybersecurity.md`](cybersecurity.md)
+
+---
+
+[← Back to Main Portfolio](../README.md)
