@@ -51,4 +51,4 @@
 > [Loquinerio_multiples,py](q2/skip_multiples.py)
 
 *Part 4*
-> [Loquinerio_table.py](q2/multiplication_generator.py)
+> [Loquinerio_table.py](q2/mutiplication_generator.py)
