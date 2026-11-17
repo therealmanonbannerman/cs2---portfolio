@@ -38,3 +38,5 @@
 ### ***Programming Activity 2***
 > [Loquinerio_evaluator.py](q2/studentperformanceevaluator.py)
 
+### ***Programming Activity 3***
+> [Loquineri
