@@ -19,7 +19,7 @@
 ### ***Programming Activity 4***
 > [Loquinerio_validation.md](q1/input_validation.md)
 
-### ***Programming Acitivty 5***
+### ***Programming Activity 5***
 > [Loquinerio_checker.md](q1/score_checker.md)
 
 > [Loquinerio_checker.py](q1/score_checker.py)
