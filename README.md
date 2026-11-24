@@ -52,3 +52,10 @@
 
 *Part 4*
 > [Loquinerio_table.py](q2/mutiplication_generator.py)
+
+### ***Programming Activity 4*** 
+*Part 1*
+> [Loquinerio.school.py](q2/school_items.py)
+
+*Part 2*
+> [Loquinerio.travel.py](q2/destination_manager.py)
